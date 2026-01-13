@@ -1,0 +1,20 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temp files
+*.tmp
+*~
+
+# Logs
+*.log
+
+# Personal notes (not for repo)
+PERSONAL_NOTES.md
+SCRATCH.md
