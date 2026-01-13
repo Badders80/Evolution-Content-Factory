@@ -52,6 +52,7 @@ This repository contains the complete planning documentation for the **Evolution
 - `STATE.md` - Living decisions, blockers, next actions
 - `CHANGELOG.md` - Document updates, vocabulary changes
 - `SUMMARY.md` - Completion checklist and next steps
+- `EXECUTION-CHECKLIST.md` - Full setup and execution checklist
 
 ### **Templates**
 - `templates/TEMPLATE-preview.md` - Thursday/Friday preview script
