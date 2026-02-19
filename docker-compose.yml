@@ -1,0 +1,119 @@
+version: '3.8'
+
+services:
+  orchestrator:
+    build:
+      context: ./orchestrator
+      dockerfile: Dockerfile
+    container_name: evo-orchestrator
+    ports:
+      - "8000:8000"
+    environment:
+      - SUPABASE_URL=${SUPABASE_URL}
+      - SUPABASE_KEY=${SUPABASE_KEY}
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - MOONSHOT_API_KEY=${MOONSHOT_API_KEY}
+    volumes:
+      - ./orchestrator:/app
+      - ./assets:/assets
+    networks:
+      - evo-network
+    restart: unless-stopped
+
+  researcher:
+    build:
+      context: ./workers/researcher
+      dockerfile: Dockerfile
+    container_name: evo-researcher
+    environment:
+      - SUPABASE_URL=${SUPABASE_URL}
+      - SUPABASE_KEY=${SUPABASE_KEY}
+      - FIRECRAWL_API_KEY=${FIRECRAWL_API_KEY}
+      - ORCHESTRATOR_URL=http://orchestrator:8000
+    volumes:
+      - ./workers/researcher:/app
+      - ./assets:/assets
+    networks:
+      - evo-network
+    depends_on:
+      - orchestrator
+    restart: unless-stopped
+
+  writer:
+    build:
+      context: ./workers/writer
+      dockerfile: Dockerfile
+    container_name: evo-writer
+    environment:
+      - SUPABASE_URL=${SUPABASE_URL}
+      - SUPABASE_KEY=${SUPABASE_KEY}
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - MOONSHOT_API_KEY=${MOONSHOT_API_KEY}
+      - ORCHESTRATOR_URL=http://orchestrator:8000
+    volumes:
+      - ./workers/writer:/app
+      - ./assets:/assets
+    networks:
+      - evo-network
+    depends_on:
+      - orchestrator
+    restart: unless-stopped
+
+  clip-agent:
+    build:
+      context: ./workers/clip-agent
+      dockerfile: Dockerfile
+    container_name: evo-clip-agent
+    environment:
+      - SUPABASE_URL=${SUPABASE_URL}
+      - SUPABASE_KEY=${SUPABASE_KEY}
+      - ORCHESTRATOR_URL=http://orchestrator:8000
+    volumes:
+      - ./workers/clip-agent:/app
+      - ./assets/clips:/assets/clips
+    networks:
+      - evo-network
+    depends_on:
+      - orchestrator
+    restart: unless-stopped
+
+  editor:
+    build:
+      context: ./workers/editor
+      dockerfile: Dockerfile
+    container_name: evo-editor
+    environment:
+      - SUPABASE_URL=${SUPABASE_URL}
+      - SUPABASE_KEY=${SUPABASE_KEY}
+      - ORCHESTRATOR_URL=http://orchestrator:8000
+    volumes:
+      - ./workers/editor:/app
+      - ./assets:/assets
+    networks:
+      - evo-network
+    depends_on:
+      - orchestrator
+    restart: unless-stopped
+
+  voice-agent:
+    build:
+      context: ./workers/voice-agent
+      dockerfile: Dockerfile
+    container_name: evo-voice-agent
+    environment:
+      - SUPABASE_URL=${SUPABASE_URL}
+      - SUPABASE_KEY=${SUPABASE_KEY}
+      - ELEVENLABS_API_KEY=${ELEVENLABS_API_KEY}
+      - ORCHESTRATOR_URL=http://orchestrator:8000
+    volumes:
+      - ./workers/voice-agent:/app
+      - ./assets/renders:/assets/renders
+    networks:
+      - evo-network
+    depends_on:
+      - orchestrator
+    restart: unless-stopped
+
+networks:
+  evo-network:
+    driver: bridge
