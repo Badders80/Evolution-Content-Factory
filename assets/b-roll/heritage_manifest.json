@@ -1,0 +1,106 @@
+[
+  {
+    "id": "galloping_1",
+    "category": "galloping",
+    "prompt": "Cinematic slow-motion shot of a thoroughbred racehorse galloping through morning mist on a training track, golden hour lighting, heritage film grain, traditional racing aesthetics, 4K",
+    "duration": "5-10 seconds",
+    "style": "heritage/traditional",
+    "status": "pending_generation"
+  },
+  {
+    "id": "galloping_2",
+    "category": "galloping",
+    "prompt": "Wide shot of horses galloping on a country racecourse at dawn, atmospheric fog, classic racing heritage feel, muted colors, filmic quality",
+    "duration": "5-10 seconds",
+    "style": "heritage/traditional",
+    "status": "pending_generation"
+  },
+  {
+    "id": "galloping_3",
+    "category": "galloping",
+    "prompt": "Slow-motion close-up of horse legs pounding the turf, dirt flying, traditional race photography style, dramatic lighting",
+    "duration": "5-10 seconds",
+    "style": "heritage/traditional",
+    "status": "pending_generation"
+  },
+  {
+    "id": "training_1",
+    "category": "training",
+    "prompt": "Morning training session at Wexford Stables, horses being led by handlers, steam rising from their coats, heritage documentary style, warm tones",
+    "duration": "5-10 seconds",
+    "style": "heritage/traditional",
+    "status": "pending_generation"
+  },
+  {
+    "id": "training_2",
+    "category": "training",
+    "prompt": "Classic shot of a trainer inspecting a horse in the stables, traditional racing atmosphere, soft natural light",
+    "duration": "5-10 seconds",
+    "style": "heritage/traditional",
+    "status": "pending_generation"
+  },
+  {
+    "id": "training_3",
+    "category": "training",
+    "prompt": "Horses walking the parade ring before a race, formal attire, traditional racing pageantry, heritage film aesthetic",
+    "duration": "5-10 seconds",
+    "style": "heritage/traditional",
+    "status": "pending_generation"
+  },
+  {
+    "id": "barriers_1",
+    "category": "barriers",
+    "prompt": "Dramatic shot of horses loading into starting barriers, tension building, traditional race day atmosphere, film grain",
+    "duration": "5-10 seconds",
+    "style": "heritage/traditional",
+    "status": "pending_generation"
+  },
+  {
+    "id": "barriers_2",
+    "category": "barriers",
+    "prompt": "Close-up of barrier gates opening, horses exploding out, dust and power, heritage racing cinematography",
+    "duration": "5-10 seconds",
+    "style": "heritage/traditional",
+    "status": "pending_generation"
+  },
+  {
+    "id": "finishes_1",
+    "category": "finishes",
+    "prompt": "Slow-motion finish line crossing, photo finish style, heritage racing photography, dramatic lighting",
+    "duration": "5-10 seconds",
+    "style": "heritage/traditional",
+    "status": "pending_generation"
+  },
+  {
+    "id": "finishes_2",
+    "category": "finishes",
+    "prompt": "Jockey raising whip in victory, traditional celebration, filmic quality, golden hour",
+    "duration": "5-10 seconds",
+    "style": "heritage/traditional",
+    "status": "pending_generation"
+  },
+  {
+    "id": "heritage_1",
+    "category": "heritage",
+    "prompt": "Vintage-style shot of thoroughbreds in a green pasture, heritage bloodstock imagery, classic composition",
+    "duration": "5-10 seconds",
+    "style": "heritage/traditional",
+    "status": "pending_generation"
+  },
+  {
+    "id": "heritage_2",
+    "category": "heritage",
+    "prompt": "Black and white style shot of racing silks, traditional patterns, heritage aesthetic",
+    "duration": "5-10 seconds",
+    "style": "heritage/traditional",
+    "status": "pending_generation"
+  },
+  {
+    "id": "heritage_3",
+    "category": "heritage",
+    "prompt": "Drone shot of a country racecourse, heritage architecture, traditional racing venue",
+    "duration": "5-10 seconds",
+    "style": "heritage/traditional",
+    "status": "pending_generation"
+  }
+]
