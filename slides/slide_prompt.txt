@@ -1,0 +1,11 @@
+Create an HTML/CSS design for a 1080x1920 pixel vertical slide. Dark charcoal background #0A0A0A. 
+
+Include:
+- Evolution Stables logo (white or gold version) positioned elegantly
+- Text "Powered by Tokinvest" in gold #D4AF37
+- Text "Presents" in white
+- Subtle gold accent line or element
+- Professional, institutional feel
+- Modern sans-serif fonts
+
+Output complete HTML with embedded CSS.
