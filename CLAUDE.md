@@ -86,6 +86,9 @@ NEXTAUTH_URL=
 - **Brand Voice**: `/home/evo/00_DNA/brand-identity/BRAND_VOICE.md`
 - **Workflows**: `/home/evo/00_DNA/workflows/`
 
+**Core Bible Documents**:
+1. `/home/evo/00_DNA/brand-identity/Evolution_Content_Factory.md` - Content Factory brand guidelines
+
 **Key Files to Reference**:
 1. `/home/evo/00_DNA/AGENTS.core.md` - Universal agent rules
 2. `/home/evo/00_DNA/build-philosophy/Master_Config_2026.md` - Hardware and architecture specs
